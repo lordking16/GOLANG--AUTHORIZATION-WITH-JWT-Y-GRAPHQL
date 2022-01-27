@@ -1,0 +1,25 @@
+{{define "index"}}
+{{template "head"}}
+<div class="card">
+  <div class="card-header">
+      LOGIN
+  </div>
+  <div class="card-body">
+      <form method="POST" action="/login">
+          <div class="form-group">
+            <label for="">Correo</label>
+            <input type="email"
+              class="form-control" name="Correo" id="Correo" aria-describedby="helpId" placeholder="">
+            <small id="helpId" class="form-text text-muted">Correo</small>
+          </div>
+          <div class="form-group">
+            <label for="">Contraseña</label>
+            <input type="password" class="form-control" name="Contrasena" id="Contrasena" aria-describedby="emailHelpId" placeholder="">
+            <small id="emailHelpId" class="form-text text-muted">Escribe tu contraseña</small>
+          </div>
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+      </form>
+  </div>
+  
+</div>
+{{end}}
